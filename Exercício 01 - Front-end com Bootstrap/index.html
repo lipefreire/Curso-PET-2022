@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Salão Freire</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar col-12 m-auto position-fixed navbar-expand-lg navbar-dark bg-info"
+      style="z-index: 999"
+    >
+      <div class="container-fluid col-11 m-auto">
+        <a class="navbar-brand" href="#">SALÃO FREIRE</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#contato">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#sobrenos">Sobre Nós</a>
+            </li>
+            <li class="nav-dark dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categorias
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Secador</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Chapinha</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Escova rotativa</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Pesquisar"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              ENVIAR
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <br /><br /><br />
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="true"
+    >
+    <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> 
+    <br>
+    <div id = "produtos"class="row row-cols-1 row-cols-md-3 g-4 col-11 m-auto">
+      <div class="col">
+        <h2 class = "text-center">Produtos</h2> 
+       
+        <div class="card h-100">
+          <img src="/img/secador.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Secador</h5>
+            <p class="card-text">
+              pode variar de 1.000 a 2.000 watts. Quanto mais alta é a potência, maior é a quantidade de ar quente lançado e assim a secagem 
+              dos cabelos é mais rápida. Tem uma regrinha que pode te ajudar: para cabelos ondulados e lisos, até 1.600 watts dá conta do recado.
+            </p>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-info"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+             VER DETALHES
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog ">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      Modal title
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu consequat nibh, vel sollicitudin nulla. Nam vel neque dignissim, sagittis nisl nec, elementum nisi. Morbi imperdiet vestibulum iaculis. Vivamus id tincidunt augue. Fusce elit risus, tempus quis porttitor maximus, viverra vel magna. Aliquam venenatis, lorem ac pellentesque euismod, leo ex iaculis est, a vestibulum sapien odio in nulla. Nulla sit amet dictum neque. Phasellus elementum, erat id luctus finibus, mauris arcu accumsan sapien, id placerat mauris arcu quis arcu. Quisque convallis, lectus eget sagittis feugiat, nunc augue aliquam tortor, et placerat nisi turpis eu ante.
+                    Nunc venenatis orci quis nulla lobortis, sed vestibulum velit malesuada. Nunc vestibulum magna id nisl eleifend efficitur. Vestibulum consequat tincidunt orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus mollis justo sit amet aliquet. Curabitur facilisis, est at tristique suscipit, elit libero gravida ex, id placerat massa massa at ligula. Cras neque ante, varius venenatis urna in, hendrerit sollicitudin nibh. Curabitur sollicitudin lorem nibh, suscipit efficitur est aliquam non. Fusce vulputate metus quis diam lobortis, in varius urna maximus. Pellentesque fermentum sem eu sodales accumsan. Nullam ultrices suscipit quam eget placerat. Donec porttitor ac diam non molestie. Vivamus elementum justo metus, semper elementum felis mollis nec. Sed non 
+                    volutpat lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla placerat eros eget fringilla feugiat.</p>
+                    <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Atualizado há 1 minuto</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <br /><br />
+        <div class="card h-100">
+          <img src="/img/chapinha.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Chapinha</h5>
+            <p class="card-text">
+              O primeiro ponto a ser levado em conta na hora de escolher uma chapinha é a temperatura, pois cada tipo de 
+              cabelo pede um calor diferente. Quem tem cabelo fino, não deve passar dos 180ºc, para não queimar os fios; já 
+              quem tem cabelos mais grossos e volumosos, pode chegar até 200ºc para facilitar o processo.
+            </p>
+            <!-- Button trigger modal -->
+            <button
+            type="button"
+            class="btn btn-info"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            >
+            VER DETALHES
+            </button>
+          
+            <!-- Modal -->
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Atualizado há 3 minutos</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <br /><br />
+        <div class="card h-100">
+          <img src="/img/escova.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Escova rotativa</h5>
+            <p class="card-text">
+              Manter os cabelos arrumados não é mais uma tarefa enorme e que só precisa ser feita nos salões de beleza. Com as escovas rotativas é possível 
+              modelar, cachear, alisar e até secar os fios, de maneira rápida e simples. No texto de hoje trouxemos as melhores escovas rotativas para comprar em 2022. 
+            </p>
+          <!-- Button trigger modal -->
+          <button
+          type="button"
+          class="btn btn-info"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          >
+          VER DETALHES
+          </button>
+          
+          <!-- Modal -->
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Atualizado há 2 horas</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+    <hr>
+    <div id= "sobrenos"class="col-11 m-auto">
+      <h2 class="text-center">CUIDE MAIS DE VOCÊ!</h2>
+      <p>
+        Cuidar de você é o mimo que você merece depois de trabalhar tanto e ter uma rotina tão corrida!
+        Se te faz feliz e te dá bem-estar, você merece mais! 
+        Cuide de você no lugar que te valoriza! 
+        Às vezes, tudo o que você precisa é de um novo visual e um cabelo que te lembre o quanto você é incrível! 
+        Uma mulher poderosa é aquela que se encontra na frente do espelho e sabe que é linda de verdade! 
+        Existem dores que só a transformação no visual feita no salão de beleza podem curar! 
+        Não tem mau humor que dure depois que você faz as unhas e ainda coloca a conversa em dia no salão de beleza! 
+      </p>
+      <hr>
+      <div id = "contato"class="col-11 m-auto">
+        <h2 class="text-center">Contato</h2>
+        <div class = " m-auto" style="width: 150px;">
+            <a href="http://whatsapp.com">
+                <i class = "fab fa-whatsapp" style="font-size: 150px; color:green"></i>
+            </a>
+      </div>
+    </div>
+  <footer style="background-color:rgb(13, 202, 240) " class = "page-footer font-small p-3">
+    <div class="text-center">
+        <a>© Copyright 2022: Todos os direitos reservados.</a>
+        <a>Salão Freire agradece pelo seu acesso.</a>
+    </div>
+
+  </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </body>
+</html>
