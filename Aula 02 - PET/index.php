@@ -85,21 +85,52 @@
     </section>
 
     <section id="formulario">
-      <form class="col-6 ">
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputEmail4">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-              </div>
-              <div class="form-group col-md-6">
-                <label for="inputPassword4">Senha</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
-              </div>
-            </div>
-            </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Entrar</button>
+      <form class="col-6 " action="processa.php" method="POST">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="email">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Senha</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Senha" name="senha">
+          </div>
+        </div>
+        </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Entrar</button>
       </form>
+    </section>
+
+    <section id="usuarios">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">EMAIL</th>
+            <th scope="col">SENHA</th>
+            <th scope="col">DATA</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <?php
+            $sql = "SELECT * FROM usuarios";
+            $res = $mysqli->query($sql);
+
+            while($dados = $res->fetch_assoc()) {
+              
+            }
+          ?>
+
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
     
 
